@@ -1,0 +1,102 @@
+{
+  "nombre": "José Aníbal Modad",
+  "titulo": "Operador Logístico | Gestión de Transporte y Flota",
+  "ubicacion": "Salta, Argentina",
+  "email_publico": "turkomodad88@gmail.com",
+  "telefono_movil": "+54 387 4793764",
+  "telefono_fijo": "+54 387 4235126",
+  "github": "https://github.com/turkoModad",
+  "descripcion": [
+    "Profesional con amplia trayectoria en logística operativa y transporte, especializado en la coordinación de rutas, manejo de flotas y distribución urbana y rural.",
+    "Más de 20 años de experiencia en conducción de unidades chasis y gestión de equipos de trabajo.",
+    "Enfoque en eficiencia operativa, cumplimiento de objetivos y resolución ágil de imprevistos.",
+    "Acostumbrado a trabajar bajo presión y en contacto con distintas áreas de la empresa."
+  ],
+  "habilidades": [
+    "Coordinación de operaciones logísticas y planificación de rutas.",
+    "Supervisión de cargas, documentación y control operativo.",
+    "Resolución de imprevistos y toma de decisiones bajo presión.",
+    "Gestión de documentación, inventarios y stock.",
+    "Liderazgo y coordinación de equipos.",
+    "Manejo de sistemas de gestión y herramientas digitales."
+  ],
+  "experiencia": [
+    {
+      "puesto": "Conductor independiente - Desarrollador de soluciones empresariales",
+      "empresa": "Autónomo",
+      "ubicacion": "Salta",
+      "periodo": "2021 - Actualidad",
+      "responsabilidades": [
+        "Servicios de transporte de pasajeros y gestión operativa.",
+        "Gestión integral del negocio propio de impresión 3D.",
+        "Desarrollo e implementación de un sistema ERP para e-commerce mediante Python, SQL y FastAPI.",
+        "Automatización de tareas logísticas y operativas.",
+        "Integración de herramientas digitales para gestión de clientes."
+      ]
+    },
+    {
+      "puesto": "Chofer – Supervisor zonal",
+      "empresa": "Plumada S.A.",
+      "ubicacion": "Salta – Tucumán – Catamarca",
+      "periodo": "2003 – 2021",
+      "responsabilidades": [
+        "Gestión operativa y supervisión de rutas logísticas.",
+        "Coordinación de carga y descarga, control de stock y entregas.",
+        "Supervisión de sucursal en Cafayate y equipo de trabajo.",
+        "Coordinación y control del mantenimiento de flota.",
+        "Gestión documental y pagos a proveedores."
+      ]
+    },
+    {
+      "puesto": "Jefe de Reparto",
+      "empresa": "Corralón Gijón",
+      "ubicacion": "Salta",
+      "periodo": "1996 – 1997",
+      "responsabilidades": [
+        "Planificación y coordinación logística de entregas.",
+        "Recepción y verificación de mercadería.",
+        "Gestión de stock y documentación.",
+        "Supervisión básica del mantenimiento de las unidades."
+      ]
+    }
+  ],
+  "educacion": [
+    "Bachiller – Américo Vespucio, Salta (1990-1991)",
+    "Colegio Salesiano Angel Zerda, Salta (1980-1990)"
+  ],
+  "cursos": [
+    "Control de calidad y procedimientos logísticos – Arca Continental (2014)",
+    "Manipulación de alimentos – Arca Continental (2014-2021)",
+    "Manipulación y control de mercadería – Arca Continental (2015-2019)",
+    "Seguridad vial y conducción responsable – Arca Continental (2016)",
+    "Manejo preventivo y defensivo – Arca Continental (2017-2021)",
+    "Prevención de accidentes laborales – Arca Continental (2018)",
+    "Normas HSE – Arca Continental (2018-2021)",
+    "Eco-conducción y reducción de huella ambiental – Arca Continental (2021)",
+    "Curso básico de Python – Platzi (2022)",
+    "Python entornos virtuales y pip – Platzi (2022)",
+    "Fundamentos de Python – Platzi (2022)",
+    "Manipulación y transformación de datos con Pandas y Numpy – Platzi (2022)",
+    "Comprehensions, funciones y manejo de errores en Python – Platzi (2022)",
+    "Ciencia de datos con Jupyter Notebooks y Anaconda – Platzi (2022)"
+  ],
+  "competencias_informaticas": [
+    "Programación: Python, SQL, JavaScript (básico)",
+    "Frameworks y Librerías: FastAPI, SQLAlchemy, Jinja2",
+    "Bases de Datos: PostgreSQL, SQLite, Dbeaver",
+    "Desarrollo Web: HTML5, CSS3, Bootstrap 5",
+    "Herramientas y Control de Versiones: Git, GitHub, Docker (básico)",
+    "Microsoft Excel, Word, Linux",
+    "Diseño de APIs REST, Autenticación JWT, Gestión de Microservicios",
+    "Manejo básico de servidores VPS",
+    "Integración con servicios de correo (ZohoMail, Brevo)",
+    "Conocimientos prácticos en lógica de sistemas ERP"
+  ],
+  "intereses": [
+    "Programación",
+    "Pesca",
+    "Camping",
+    "Viajes"
+  ],
+  "foto": "perfil.jpg"
+}

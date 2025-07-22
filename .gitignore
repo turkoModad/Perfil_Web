@@ -1,0 +1,41 @@
+perfil/
+# Entorno virtual
+venv/
+.env
+
+# Archivos compilados de Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Archivos de log o debug
+*.log
+
+# Archivos de bases de datos SQLite (si usás)
+*.sqlite3
+*.db
+
+# Archivos temporales o de editor
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# VSCode / IDEs
+.vscode/
+.idea/
+
+# Carpetas de pruebas
+tests/__pycache__/
+tests/*.pyc
+
+# Configuración de entorno
+.env.local
+.env.production
+
+# Carpeta de deploy opcional
+deploy/
+
+# Archivos de sistema Mac/Windows
+.DS_Store
+Thumbs.db

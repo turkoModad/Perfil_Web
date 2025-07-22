@@ -1,0 +1,158 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="card shadow-sm text-center p-4 mb-4 mx-auto" style="max-width: 800px;">
+  <img src="{{ url_for('static', path='img/' ~ perfil.foto) }}" class="rounded-circle mx-auto d-block" style="width: 200px; height: 200px; object-fit: cover;" alt="Foto de perfil">
+
+  <h2 class="mt-3">{{ perfil.nombre }}</h2>
+  <p class="text-muted">{{ perfil.titulo }}</p>
+
+  <div class="d-flex justify-content-center flex-wrap gap-2 mb-3">
+    <a href="{{ perfil.github }}" target="_blank" class="btn btn-outline-dark btn-sm">
+      <i class="bi bi-github"></i> GitHub
+    </a>
+
+    <a href="https://www.linkedin.com/in/josemodad" target="_blank" class="btn btn-primary btn-sm">
+      <i class="bi bi-linkedin"></i> LinkedIn
+    </a>
+
+    <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#contactModal">
+      <i class="bi bi-envelope-fill"></i> Contacto
+    </button>
+
+    <a href="{{ url_for('static', path='cv/jose_anibal_modad_CV.pdf') }}" download class="btn btn-secondary btn-sm">
+      <i class="bi bi-file-earmark-arrow-down"></i> Descargar CV
+    </a>
+
+  </div>
+</div>
+
+<div class="container">
+
+  <div class="row mb-4">
+    <div class="col-md-6 mb-3">
+      <div class="border rounded p-3 h-100">
+        <h4>Perfil Profesional</h4>
+        <ul>
+          {% for d in perfil.descripcion %}
+            <li>{{ d }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-6 mb-3">
+      <div class="border rounded p-3 h-100">
+        <h4>Habilidades</h4>
+        <ul>
+          {% for h in perfil.habilidades %}
+            <li>{{ h }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="mb-4">
+    <div class="border rounded p-3">
+      <h4>Experiencia Laboral</h4>
+      {% for exp in perfil.experiencia %}
+        <div class="mb-3">
+          <h5 class="fw-bold">{{ exp.puesto }} – {{ exp.empresa }} ({{ exp.periodo }})</h5>
+          <small class="text-muted">{{ exp.ubicacion }}</small>
+          <ul>
+            {% for r in exp.responsabilidades %}
+              <li>{{ r }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="row mb-4">
+    <div class="col-md-6 mb-3">
+      <div class="border rounded p-3 h-100">
+        <h4>Cursos y Capacitaciones</h4>
+        <ul>
+          {% for c in perfil.cursos %}
+            <li>{{ c }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-6 mb-3">
+      <div class="border rounded p-3 h-100">
+        <h4>Competencias Informáticas</h4>
+        <ul>
+          {% for comp in perfil.competencias_informaticas %}
+            <li>{{ comp }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4">
+    <div class="col-md-6 mb-3">
+      <div class="border rounded p-3 h-100">
+        <h4>Educación</h4>
+        <ul>
+          {% for e in perfil.educacion %}
+            <li>{{ e }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-6 mb-3">
+      <div class="border rounded p-3 h-100">
+        <h4>Intereses</h4>
+        <ul>
+          {% for i in perfil.intereses %}
+            <li>{{ i }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form method="post" action="/contacto">
+        <div class="modal-header">
+          <h5 class="modal-title" id="contactModalLabel">Enviar Mensaje</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          {% if mensaje_estado %}
+            <div class="alert alert-{{ mensaje_estado[0] }} alert-dismissible fade show" role="alert">
+              {{ mensaje_estado[1] }}
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+          {% endif %}
+          <div class="mb-3">
+            <input type="text" name="nombre" class="form-control" placeholder="Tu Nombre" required>
+          </div>
+          <div class="mb-3">
+            <input type="email" name="email" class="form-control" placeholder="Tu Email" required>
+          </div>
+          <div class="mb-3">
+            <textarea name="mensaje" class="form-control" placeholder="Tu Mensaje" rows="4" required></textarea>
+          </div>
+          
+          <div style="display:none;">
+            <input type="text" name="telefono">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

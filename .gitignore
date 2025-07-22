@@ -39,3 +39,5 @@ deploy/
 # Archivos de sistema Mac/Windows
 .DS_Store
 Thumbs.db
+static/cv/*.pdf
+static/img/perfil.jpg

@@ -35,10 +35,10 @@
       ]
     },
     {
-      "puesto": "Chofer – Supervisor zonal",
+      "puesto": "Chofer - Supervisor zonal",
       "empresa": "Plumada S.A.",
-      "ubicacion": "Salta – Tucumán – Catamarca",
-      "periodo": "2003 – 2021",
+      "ubicacion": "Salta - Tucumán - Catamarca",
+      "periodo": "2003 - 2021",
       "responsabilidades": [
         "Gestión operativa y supervisión de rutas logísticas.",
         "Coordinación de carga y descarga, control de stock y entregas.",
@@ -51,7 +51,7 @@
       "puesto": "Jefe de Reparto",
       "empresa": "Corralón Gijón",
       "ubicacion": "Salta",
-      "periodo": "1996 – 1997",
+      "periodo": "1996 - 1997",
       "responsabilidades": [
         "Planificación y coordinación logística de entregas.",
         "Recepción y verificación de mercadería.",
@@ -61,24 +61,24 @@
     }
   ],
   "educacion": [
-    "Bachiller – Américo Vespucio, Salta (1990-1991)",
+    "Bachiller - Américo Vespucio, Salta (1990-1991)",
     "Colegio Salesiano Angel Zerda, Salta (1980-1990)"
   ],
   "cursos": [
-    "Control de calidad y procedimientos logísticos – Arca Continental (2014)",
-    "Manipulación de alimentos – Arca Continental (2014-2021)",
-    "Manipulación y control de mercadería – Arca Continental (2015-2019)",
-    "Seguridad vial y conducción responsable – Arca Continental (2016)",
-    "Manejo preventivo y defensivo – Arca Continental (2017-2021)",
-    "Prevención de accidentes laborales – Arca Continental (2018)",
-    "Normas HSE – Arca Continental (2018-2021)",
-    "Eco-conducción y reducción de huella ambiental – Arca Continental (2021)",
-    "Curso básico de Python – Platzi (2022)",
-    "Python entornos virtuales y pip – Platzi (2022)",
-    "Fundamentos de Python – Platzi (2022)",
-    "Manipulación y transformación de datos con Pandas y Numpy – Platzi (2022)",
-    "Comprehensions, funciones y manejo de errores en Python – Platzi (2022)",
-    "Ciencia de datos con Jupyter Notebooks y Anaconda – Platzi (2022)"
+    "Control de calidad y procedimientos logísticos - Arca Continental (2014)",
+    "Manipulación de alimentos - Arca Continental (2014-2021)",
+    "Manipulación y control de mercadería - Arca Continental (2015-2019)",
+    "Seguridad vial y conducción responsable - Arca Continental (2016)",
+    "Manejo preventivo y defensivo - Arca Continental (2017-2021)",
+    "Prevención de accidentes laborales - Arca Continental (2018)",
+    "Normas HSE - Arca Continental (2018-2021)",
+    "Eco-conducción y reducción de huella ambiental - Arca Continental (2021)",
+    "Curso básico de Python - Platzi (2022)",
+    "Python entornos virtuales y pip - Platzi (2022)",
+    "Fundamentos de Python - Platzi (2022)",
+    "Manipulación y transformación de datos con Pandas y Numpy - Platzi (2022)",
+    "Comprehensions, funciones y manejo de errores en Python - Platzi (2022)",
+    "Ciencia de datos con Jupyter Notebooks y Anaconda - Platzi (2022)"
   ],
   "competencias_informaticas": [
     "Programación: Python, SQL, JavaScript (básico)",

@@ -23,19 +23,23 @@ locale.setlocale(locale.LC_TIME, 'es_AR.utf8')
 with open("perfil.json", encoding="utf-8") as f:
     perfil_data = json.load(f)
 
+
+
 @app.get("/", response_class=HTMLResponse)
 def read_root(request: Request):
     mensaje_estado = request.session.pop("mensaje_estado", None)
     fecha_actual = datetime.now().strftime("%B %Y")
+
     return templates.TemplateResponse(
-        "index.html",
-        {
-            "request": request,
+        request=request,
+        name="index.html",
+        context={
             "perfil": perfil_data,
             "mensaje_estado": mensaje_estado,
             "fecha_actual": fecha_actual
         }
     )
+
 
 
 class ContactoForm(BaseModel):
@@ -79,5 +83,5 @@ if __name__ == "__main__":
         "main:app",
         host=settings.HOST,
         port=settings.PORT,
-        reload=False
+        reload=True
         )

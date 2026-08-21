@@ -41,3 +41,6 @@ deploy/
 Thumbs.db
 static/cv/*.pdf
 static/img/perfil.jpg
+
+
+entorno_perfil/
